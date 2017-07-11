@@ -17,7 +17,7 @@ It SHOULD implement exceptions for `Psr\Http\Client\Exception\NetworkException` 
 ## Goal
 
 The goal of this PSR is to allow developers to create libraries decoupled from HTTP Client
-implementations. This would make libraries more stable since the reduced number of
+implementations. This would make libraries more stable since the number of
 dependencies and the likelihood to get in version conflicts is reduced.
 
 The second goal is that all HTTP clients should follow the [Liskov substitutions principle][Liskov].
@@ -62,6 +62,7 @@ interface HttpClient
      * @throws \Psr\Http\Client\Exception If an error happens during processing the request.
      */
     public function sendRequest(RequestInterface $request);
+}
 ```
 
 
